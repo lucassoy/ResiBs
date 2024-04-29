@@ -1,0 +1,45 @@
+/*Reduccion tamaño slider*/
+.carousel-inner{
+max-height: 39rem;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/*mapa*/
+#carouselExampleControls {
+    margin-bottom: 50px;
+  }
+.mapa {
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  .mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #local {
+    background: #f3f3f3;    
+  }
+
+  .wrapper {
+    padding-top: 50px;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
