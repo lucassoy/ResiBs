@@ -70,7 +70,7 @@
         transition: 0.3s ease-in-out;
     } 
     .container-card .card:hover{
-        height: 420px;
+        height: auto;
 
     }
 
@@ -90,19 +90,17 @@
 
     .container-card .card .content-card{
         position: relative;
-        margin-top: -140px;
         padding: 10px 15px;
         text-align: center;
         color: #111;
         visibility: hidden;
         opacity: 0;
-        transition: 0.3s ease-in-out;
+        transition: 0.1s ease-in-out;
     }
 
     .container-card .card:hover .content-card{
         visibility: visible;
         opacity: 1;
-        margin-top: 100px;
         transition-delay: 0.3s;
     }
   
