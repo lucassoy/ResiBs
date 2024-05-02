@@ -90,7 +90,7 @@
   
        
   
-        <form  action="https://formsubmit.co/residenciascerpeste@gmail.com" method="POST">     
+        <form id="formulario-contacto" action="https://formsubmit.co/residenciascerpeste@gmail.com" method="POST">     
               <div class= "mb-3">           
                 <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com">
               </div>
@@ -105,7 +105,7 @@
               <textarea class="form-control" name="message" id="message" rows="4" placeholder="Mensaje"></textarea>
             </div>
             <div class="mb-3">
-              <button id="formulario-contacto" type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+              <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next" value="https://lucassoy.github.io/ResiBs/index.html">
             </div>
@@ -126,10 +126,12 @@
 
 
     <script>
-      document.getElementById('formulario-contacto').addEventListener('submit', function() {
-        // Redirige al usuario al índice después de enviar el formulario
-        window.location.href = 'index.html';
+      document.getElementById("formulario-contacto").addEventListener("submit", function(event){
+        event.preventDefault(); 
+        alert("¡Mensaje enviado con éxito! Pronto será respondido por correo electronico.");
+        
       });
-    </script>
+      </script>
+      
   </body>
 </html>
